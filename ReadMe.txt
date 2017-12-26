@@ -1,6 +1,6 @@
 The following is the project report URL: https://sites.google.com/view/bookspot/home
 
-Instructions for execution:
+# Instructions for execution:
 
 We have used AWS cluster to run our application. We are using two different approaches for this project
     1. User based Recommendation ( user_recommendation.py )
@@ -12,7 +12,7 @@ We have to pre-process the data in the dataset so that we won't encounter any il
 
 Now we will use the BX-Book-Ratings.csv data which has around 1.48 millions records for both our programs.
 
-AWS cluster:
+# AWS cluster:
 
 To run a program in AWS cluster , we have to initially create a cluster in AWS. To create a cluster in AWS, there
 are few prerequisites.
@@ -36,7 +36,7 @@ We need to store our source code and data files from AWS to hadoop by using foll
        $ aws s3 cp s3://bucketname/<filename> ./
 The command is repeated for all the files that are to be downloaded from AWS to hadoop.
 
-Running Program:
+# Running Program:
 
       $spark-submit s3://bucketname/<filename.py> s3n://bucketname/<hadoop_path_for_data_file> s3n://bucketname/<output_path>
 Once the command is executed it takes a lot of time, to run the code, and then stores the output in Amazon S3.
