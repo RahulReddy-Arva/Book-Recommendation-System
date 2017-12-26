@@ -1,4 +1,6 @@
-Instructions:
+The following is the project report URL: https://sites.google.com/view/bookspot/home
+
+Instructions for execution:
 
 We have used AWS cluster to run our application. We are using two different approaches for this project
     1. User based Recommendation ( user_recommendation.py )
